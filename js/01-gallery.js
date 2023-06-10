@@ -31,5 +31,4 @@ function onClick(event) {
       instance.close();
     }
   }
-  д;
 }
