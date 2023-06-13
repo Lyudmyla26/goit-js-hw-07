@@ -17,8 +17,9 @@ const makupElement = galleryMarkup(galleryItems);
 gallery.innerHTML = makupElement;
 gallery.addEventListener("click", onClick);
 function onClick(event) {
-  const lightbox = new SimpleLightbox(".gallery a", {
-    captionsData: "alt",
-    captionDelay: 250,
-  });
+  event.preventDefault();
 }
+const lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionDelay: 250,
+});
